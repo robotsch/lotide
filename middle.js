@@ -17,24 +17,24 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(arr1, arr2) {
-  if(eqArrays(arr1, arr2)) {
+  if (eqArrays(arr1, arr2)) {
     console.log(`✅ ${arr1} === ${arr2}`);
   } else {
     console.log(`🛑 ${arr1} !== ${arr2}`);
   }
-}
+};
 
 const middle = function(arr) {
   // Return empty on short arrays
-  if(arr.length <= 2) {
-    return []
+  if (arr.length <= 2) {
+    return [];
   }
   // Calculate middle + lower index middle of even arrays
-  let midIndex = Math.floor(arr.length / 2) - 1
+  let midIndex = Math.floor(arr.length / 2) - 1;
   // Ternary return for even/odd arrays
-  return arr.length % 2 === 0 ? [arr[midIndex], arr[midIndex + 1]] : [arr[midIndex] + 1]
-}
+  return arr.length % 2 === 0 ? [arr[midIndex], arr[midIndex + 1]] : [arr[midIndex] + 1];
+};
 
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]) // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]) // => [3, 4]
-assertArraysEqual(middle([1, 2, 3, 4, 5 ]), [3])
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4, 5 ]), [3]);
