@@ -32,8 +32,9 @@ const middle = function(arr) {
   // Calculate middle + lower index middle of even arrays
   let midIndex = Math.floor(arr.length / 2) - 1
   // Ternary return for even/odd arrays
-  return arr.length % 2 === 0 ? [arr[midIndex], arr[midIndex + 1]] : [arr[midIndex]]
+  return arr.length % 2 === 0 ? [arr[midIndex], arr[midIndex + 1]] : [arr[midIndex] + 1]
 }
 
 assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]) // => [2, 3]
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]) // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4, 5 ]), [3])
