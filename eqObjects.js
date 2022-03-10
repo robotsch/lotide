@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ ${actual} === ${expected}`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   // Catch length mismatch
   if (arr1.length === arr2.length) {
     // Loop through elements
@@ -24,7 +24,7 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   if (!(Object.keys(object1).length === Object.keys(object2).length)) {
     return false;
   }
