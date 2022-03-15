@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   // Catch length mismatch
   if (arr1.length === arr2.length) {
     // Loop through elements

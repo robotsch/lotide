@@ -13,7 +13,7 @@ const without = function(srcArr, removeArr) {
   return newArr;
 };
 
-module.exports = without
+module.exports = without;
 
 // console.log(without([1, 2, 3], [1])); // => [2, 3]
 // console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]

@@ -6,7 +6,7 @@ const map = function(arr, cb) {
   return results;
 };
 
-module.exports = map
+module.exports = map;
 
 // const words = ["ground", "control", "to", "major", "tom"];
 // const numbers = [1, 2, 3, 4];

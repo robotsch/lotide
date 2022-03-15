@@ -6,7 +6,7 @@ const findKey = (obj, cb) => {
   }
 };
 
-module.exports = findKey
+module.exports = findKey;
 
 // assertEqual(findKey({
 //   "Blue Hill": { stars: 1 },

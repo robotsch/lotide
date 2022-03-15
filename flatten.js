@@ -18,6 +18,6 @@ const flatten = function(arrToFlatten) {
   return newArr;
 };
 
-module.exports = flatten
+module.exports = flatten;
 
 // assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), flatten([1, 2, 3, 4, 5, 6]));

@@ -9,4 +9,4 @@ const middle = function(arr) {
   return arr.length % 2 === 0 ? [arr[midIndex], arr[midIndex + 1]] : [arr[midIndex] + 1];
 };
 
-module.exports = middle
+module.exports = middle;
